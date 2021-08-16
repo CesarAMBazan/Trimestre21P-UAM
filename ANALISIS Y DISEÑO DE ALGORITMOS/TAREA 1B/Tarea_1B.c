@@ -1,7 +1,5 @@
 /*Creado por Mejia Bazan Cesar Arturo 2182005565*/
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 
 int producto(int a, int b);
 int contador = 0;
