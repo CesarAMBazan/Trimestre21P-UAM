@@ -19,7 +19,7 @@ Puedes elegir cualquiera de lso metodso de busqueda en cada problema.
 y a partir de una función de evaluación debera ir realizando las acciones que lo acerquen a la solución.
 - El problema del agente viajero. Dado un conjunto de ciudades, encontrar el recorrido más corto que visita todas las ciudades
 sin visitar ninguna ciudad dos veces y regresar al punto de partida.
-- Encontrar el valor **minimo** de la función ![equation](http://www.sciweavers.org/tex2img.php?eq=3x%255E2-4x%252B5%26bc%3DWhite%26fc%3DBlack%26im%3Djpg%26fs%3D12%26ff%3Darev%26edit=)
+- Encontrar el valor **minimo** de la función ![equation](http://www.sciweavers.org/tex2img.php?eq=3x%255E2-4x%252B5%26bc%3DWhite%26fc%3DBlack%26im%3Djpg%26fs%3D12%26ff%3Darev%26edit%3D0)
 , utilizando valores de x desde -8 hasta 8
 
 ### Entrega
