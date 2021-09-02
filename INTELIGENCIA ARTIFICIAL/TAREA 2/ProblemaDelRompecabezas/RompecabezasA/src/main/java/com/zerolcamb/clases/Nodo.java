@@ -8,40 +8,47 @@ import java.util.List;
  *
  * @author Zerol
  */
-public class Nodo {
+public class Nodo implements Comparable<Nodo>{
     
-    public static int[][] recibido;
-    public int gn;
-    public int fn;
+    private int[][] recibido;
+    private int gn;
+    private int fn;
 
     public Nodo(int[][] recibido, int gn, int fn) {
         this.recibido = recibido;
         this.gn = gn;
         this.fn = fn;
     }
-    
-    public static int[][] generar_nodo(){
-        int corde[] = encontrarVacio();
-        int posibles_movimientos[][] = {{corde[0], corde[1]-1},
-            {corde[0], corde[1]+1},
-            {corde[0]-1, corde[1]},
-            {corde[0]+1, corde[1]}};
-        List<Nodo> generados = new ArrayList<Nodo>();
-        for (int i = 0; i < 4; i++) {
-            
-            
-        }
+
+    public void setRecibido(int[][] recibido) {
+        this.recibido = recibido;
+    }
+
+    public void setGn(int gn) {
+        this.gn = gn;
+    }
+
+    public void setFn(int fn) {
+        this.fn = fn;
     }
     
-    public static int[] encontrarVacio(){
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                if (recibido[i][j] == 0){
-                    int aux[] = {i, j};
-                    return aux;
-                }
-            }
-            
-        }
+    public int[][] getRecibido() {
+        return recibido;
     }
+
+    public int getGn() {
+        return gn;
+    }
+
+    public int getFn() {
+        return fn;
+    }
+
+    @Override
+    public int compareTo(Nodo o) {
+        if(this.getFn() > o.getFn()) return 1;
+        if(this.getFn() < o.getFn()) return -1;
+        else return 0;
+    }
+    
 }

@@ -25,7 +25,9 @@
  * 
  */
 package com.zerolcamb.principal;
-import com.zerolcamb.operaciones.Rompecabezas;
+
+import com.zerolcamb.operaciones.Operaciones;
+
 /**
  *
  * @author Mejia Bazan Cesar Arturo 2182005565
@@ -33,7 +35,6 @@ import com.zerolcamb.operaciones.Rompecabezas;
  */
 public class principal {
     public static void main(String[] args) {
-        Rompecabezas rompecabezas = new Rompecabezas();
-        rompecabezas.inicio();
+        Operaciones.inicio();
     }
 }
