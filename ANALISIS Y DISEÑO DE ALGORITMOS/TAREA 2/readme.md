@@ -1,5 +1,5 @@
 ### Descripción
-Escribe un programa quer calcule cuántas cadenas formadas por N dígitos del **0** al **9** cumplen lo siguiente:
+Escribe un programa que calcule cuántas cadenas formadas por N dígitos del **0** al **9** cumplen lo siguiente:
 - La cadena no debe terminar en **4**
 - Si la posición ***k*** de la cadena tiene un **0** y la posición ***k + 1*** existe, entonces la posición ***k + 1*** debe tener un **1**
 - Si la posición ***k*** de la cadena tiene un **5** y la posición ***k + 1*** existe, entonces la posición ***k + 1*** debe tener un dígito mayor que **5**
