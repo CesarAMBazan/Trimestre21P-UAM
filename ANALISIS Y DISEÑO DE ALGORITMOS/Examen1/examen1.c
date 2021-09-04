@@ -5,7 +5,7 @@
 int main(){
     int b, c, n, k, t, w, x, y, z;
     scanf("%d %d %d", &b, &c, &n);
-    k= log10(n)/log10(b);
+    k= (log10(n)/log10(b));
     t= n;
     w= k;
     x= b;
