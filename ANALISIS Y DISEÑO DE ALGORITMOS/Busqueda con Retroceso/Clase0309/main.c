@@ -4,8 +4,8 @@
  */
 
 #include <stdio.h>
+#define n 5
 
-const int n = 5;
 char cadena[n + 1] = "XXXXX";
 
 void procesa(int i)
