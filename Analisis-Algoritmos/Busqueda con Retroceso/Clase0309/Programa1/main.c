@@ -8,6 +8,8 @@
 
 char cadena[n + 1] = "XXXXX";
 
+//* Vamos a llenar la cadena de la posición i en adelante
+
 void procesa(int i)
 {
     if (i == n)
