@@ -24,7 +24,8 @@ public class Operaciones {
         int[][] estado_objetivo = { {1,2,3},{4,5,6},{7,8,0} };
         System.out.println("Construyendo rompecabezas...");
         /*Construccion del rompecabezas aleatorio*/
-        int[][] estado_inicial = construirRompecabezas(estado_objetivo);
+        // int[][] estado_inicial = construirRompecabezas(estado_objetivo);
+        int [][] estado_inicial = { {0,2,3},{1,4,6},{7,5,8} };
         /*Impresion de los dos rompecabezas*/
         System.out.println("El rompecabezas construido fue: ");
         imprimirRompecabezas(estado_inicial);
@@ -41,7 +42,7 @@ public class Operaciones {
         abiertos.add(inicio);
         System.out.println("Resolviendo...");
         int max=0; /*Variable auxiliar para el número maximo de iteraciones*/
-        while (max <= 10000) {
+        while (max <= 3000) {
             /*Se borran los nodos que ya se hayan visto*/
             borrarVistos(abiertos, cerrados); 
             /*Se crea un nodo auxiliar a partir del primer nodo de la lista*/
@@ -53,6 +54,7 @@ public class Operaciones {
             /*Se genera una lista con los nodos de aux, es decir con los 
             posibles movimientos
             */
+            
             List <Nodo> nodos = generar_nodo(aux);
             for (int i = 0; i < nodos.size(); i++){
                 Nodo aux2 = nodos.get(i);
@@ -74,7 +76,7 @@ public class Operaciones {
         /*Se imprime la iteracion*/
         int pasos;
         pasos = imprimirIteracion(abiertos.get(0));
-        if(max < 10000) System.out.println("Ya se acabo, se resolvio despues de: "+max
+        if(max < 3000) System.out.println("Ya se acabo, se resolvio despues de: "+max
                             +" nodos expandidos\nY con un número de "+pasos+" pasos");
         else{
             System.out.println("No se encontro solución al rompecabezas");

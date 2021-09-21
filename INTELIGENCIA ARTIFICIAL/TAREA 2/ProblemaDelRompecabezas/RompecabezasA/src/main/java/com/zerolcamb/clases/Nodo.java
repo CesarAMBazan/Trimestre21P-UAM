@@ -1,8 +1,6 @@
 /*Clase Nodo: en esta clase se define lo que es un nodo de cada iteración*/
 package com.zerolcamb.clases;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  *

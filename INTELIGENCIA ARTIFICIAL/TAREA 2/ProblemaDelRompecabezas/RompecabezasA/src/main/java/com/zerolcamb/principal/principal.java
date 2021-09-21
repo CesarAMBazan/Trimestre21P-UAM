@@ -20,8 +20,9 @@
  * donde:
  *  * g(n) = distancia del nodo actual al nodo raiz (distancia que ha reccorrido
  *           el espacio vacio desde la ejecución)
- *  * h(n) = número de espacios no correspondientes comparando el estado
- *           inicial con el estado objetivo
+ *  * h(n) = la sumatoria de la distancia manhattan de cada espacio con su respectivo
+ *		     objetivo
+ *        
  * 
  */
 package com.zerolcamb.principal;
