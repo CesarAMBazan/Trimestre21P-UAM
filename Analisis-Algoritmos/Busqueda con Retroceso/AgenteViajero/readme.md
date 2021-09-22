@@ -6,7 +6,7 @@ El problema del agente viajero consiste en encontrar un recorrido que visite tod
 
 ### Entrada
 
-Un entero $N$ seguido de $N * N$ enteros que denotan los costos en la matriz de adyacencia de una gráfica completa de $N$ vertices. Puedes suponer que $1<=N<=15$ y que los costos de las aristas están en el rango de $0$ a $10^6$.
+Un entero <!-- $N$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=N"> seguido de <!-- $N * N$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=N%20*%20N"> enteros que denotan los costos en la matriz de adyacencia de una gráfica completa de $N$ vertices. Puedes suponer que <!-- $1<=N<=15$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=1%3C%3DN%3C%3D15"> y que los costos de las aristas están en el rango de <!-- $0$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=0"> a <!-- $10^6$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=10%5E6">.
 
 ### Salida
 
