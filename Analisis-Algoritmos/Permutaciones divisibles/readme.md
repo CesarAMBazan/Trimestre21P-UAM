@@ -6,7 +6,7 @@ Escribe un programa que encuentre todas las permutaciones $A_1,A_2,...,A_N$ del 
 
 ### Entrada
 
-Un entero $N$. Puedes suponer que $2<=N<=20$.
+Un entero $N$. Puedes suponer que <!-- $2<=N<=20$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=2%3C%3DN%3C%3D20">.
 
 ### Salida
 
