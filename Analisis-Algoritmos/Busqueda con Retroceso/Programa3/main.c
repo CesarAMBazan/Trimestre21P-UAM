@@ -1,10 +1,11 @@
 /*
  * Ya tenemos un código (y tal vez entendamos cómo funciona) que imprime 2^N cadenas binarias de
  * longitud N. Ahora queremos un código que imprima únicamente las cadenas binarias palíndromas
+ * Estrategia 2 (rapida): genera únicamente las validas
  */
 
 #include <stdio.h>
-#define n 20
+#define n 5
 
 char cadena[n + 1] = {};
 
@@ -14,20 +15,24 @@ char cadena[n + 1] = {};
 */
 void procesa(int i)
 {
-    if (i == n)
+    if (i == n) //* Suposición: Si terminamos de llenar la cadena valida
     {
-        for (int i = 0, j = n - 1; i < j; ++i, --j)
-            if (cadena[i] != cadena[j])
-                return;
         printf("%s\n", cadena);
     }
     else
     {
-        cadena[i] = '0';
-        procesa(i + 1);
-
-        cadena[i] = '1';
-        procesa(i + 1);
+        if (i < n / 2 + n % 2)
+        {
+            cadena[i] = '0';
+            procesa(i + 1);
+            cadena[i] = '1';
+            procesa(i + 1);
+        }
+        else
+        {
+            cadena[i] = cadena[n - 1 - i];
+            procesa(i + 1);
+        }
     }
 }
 
