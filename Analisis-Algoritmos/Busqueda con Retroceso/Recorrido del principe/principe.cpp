@@ -27,7 +27,7 @@ void resuelve(int i, int j, int s)
         {
             visitadas[i + 1][j] == true;
             resuelve(i + 1, j, s + 1);
-            visitadas[i + 1][j] == false
+            visitadas[i + 1][j] == false;
         }
         if (j - 1 >= 0 && visitadas[i][j - 1] == false)
         {
