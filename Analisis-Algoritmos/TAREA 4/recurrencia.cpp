@@ -8,6 +8,7 @@
 int n;
 bool calculado[30 + 1][30 + 1];
 unsigned long long memoria[30 + 1][30 + 1];
+
 unsigned long long f(int n, int k)
 {
     if (calculado[n][k] == false)
@@ -20,6 +21,7 @@ unsigned long long f(int n, int k)
     }
     return memoria[n][k];
 }
+
 int main()
 {
     scanf("%d", &n);
