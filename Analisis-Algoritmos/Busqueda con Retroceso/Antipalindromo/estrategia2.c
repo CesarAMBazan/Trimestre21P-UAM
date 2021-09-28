@@ -25,7 +25,7 @@ void genera(int i)
     // vamos a usar la n global
     if (i == n)
     {
-        printf("%s\n", cadena);
+        // printf("%s\n", cadena);
         contador++;
     }
     else
