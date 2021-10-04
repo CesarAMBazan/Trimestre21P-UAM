@@ -1,42 +1,50 @@
+/*
+ * Programa realizado por Mejia Bazan Cesar Arturo
+ */
 #include <stdio.h>
 #include <algorithm>
+
 int n, k;
-int n_enteros[30];
-int contador = 1;
-void genera(int i)
+int elemento[30];
+int posicion[30];
+
+void sumas(int i)
 {
-    if (i == n - (k - 1))
+    if (i == k)
     {
-        return;
-        // printf("%d\t\t", contador);
-        // for (int i = 0; i < n; i++)
-        //     printf("%d ", n_enteros[i]);
+        //! DEBUG: Imprimir secuencias
+        // for (int i = 0; i < k; ++i)
+        // {
+        //     printf("%d ", posicion[i]);
+        // }
         // printf("\n");
-        // contador++;
+        int suma = 0;
+        for (int j = 0; j < k; j++)
+        {
+            suma += elemento[posicion[j]];
+        }
+        printf("%d\n", suma);
     }
     else
     {
-        int aux = k - 1;
-        int aux2 = 0;
-        int suma = n_enteros[i];
-        genera(i + 1);
-        for (int j = i + 1; j < n; j++)
+        for (int c = i; c < n; c++)
         {
-            while (aux != 0)
-            {
-                suma += n_enteros[j];
-                aux--;
-            }
+            std::swap(posicion[i], posicion[c]);
+            if (i == 0 || posicion[i - 1] < posicion[i])
+                sumas(i + 1);
+            std::swap(posicion[i], posicion[c]);
         }
     }
 }
+
 int main()
 {
     scanf("%d %d", &n, &k);
     for (int i = 0; i < n; i++)
     {
-        scanf("%d", &n_enteros[i]);
+        scanf("%d", &elemento[i]);
+        posicion[i] = i;
     }
-    genera(0);
+    sumas(0);
     return 0;
 }

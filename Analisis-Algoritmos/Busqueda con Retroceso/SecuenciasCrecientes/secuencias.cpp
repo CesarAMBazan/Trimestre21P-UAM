@@ -12,9 +12,9 @@ void solve(int i)
     if (i == n)
     {
         //! DEBUG: Imprimir secuencias
-        // for (int i = 0; i < n; i++)
-        //     printf("%d ", secuencias[i]);
-        // printf("\n");
+        for (int i = 0; i < n; i++)
+            printf("%d ", secuencias[i]);
+        printf("\n");
         contador++;
     }
     else

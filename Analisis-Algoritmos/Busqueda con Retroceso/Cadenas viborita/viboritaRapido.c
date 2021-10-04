@@ -33,6 +33,6 @@ int main()
 {
     scanf("%d", &n);
     genera(0);
-    printf("Contador: %lld", contador);
+    printf("%lld", contador);
     return 0;
 }
