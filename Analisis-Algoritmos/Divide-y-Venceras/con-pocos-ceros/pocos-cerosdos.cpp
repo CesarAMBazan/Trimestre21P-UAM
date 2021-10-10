@@ -11,7 +11,7 @@ int solve(int i)
     else if (i == 3)
         return 7;
     else
-        return solve(n - 1) + solve(n - 2) + solve(n - 3);
+        return solve(i - 1) + solve(i - 2) + solve(i - 3);
 }
 int main()
 {
