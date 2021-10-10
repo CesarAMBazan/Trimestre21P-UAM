@@ -33,7 +33,7 @@ int main()
     resultado memoria[n0 + 1][k0 + 1];
     for (int n = 0; n <= n0; n++)
     {
-        for (int k = 0; k <= n; k++)
+        for (int k = 0; k <= k0; k++)
         {
             if (k == 0 || k == n)
                 memoria[n][k] = {1, 1};
